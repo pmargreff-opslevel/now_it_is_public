@@ -1,0 +1,22 @@
+---
+version: 1
+service:
+  name: my_new_public_service
+  product: Payments Service
+  language: Python
+  owner: Backend
+  framework: django
+  description: A Python-based service (have to repeat this description in the next frame, sorry!)
+  aliases:
+  - my_new_public_service
+  tags:
+  - key: cookiecutter
+    value: test-opslevel-integration
+  repositories:
+  - name: suraj-testing2/akka_samples
+    path: "/"
+    provider: github
+  tools: 
+  - category: incidents
+    url: http://pagerduty.com/
+    name: PagerDuty - my_new_public_service
